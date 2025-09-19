@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset="utf-8" />
+    <title>Седона - городок в Аризоне</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="main-header-logo" src="#" alt="Логотип города Седоны" />
+        </a>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link menu-link-current" href="index.html">Главная</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#"> О Седоне </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="menu-user">
+          <li class="menu-user-item">
+            <a class="menu-user-link menu-user-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="menu-user-item">
+            <a class="menu-user-link menu-user-link-favourites" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favourites">12</span>
+            </a>
+          </li>
+          <li class="menu-user-item">
+            <!--При нажатии на кнопку появится модальное окно с выбором даты заезда и пр.
+              Как делать модальное окно я пока не в курсе
+            Нужно ли кнопе задавать type в таком случае?-->
+            <button class="button-modal">Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
+      <section class="hero">
+        <h2 class="visually-hidden">Добро пожаловать</h2>
+        <!--Чтобы стилизовать элементы в <p> добавлять <span> сразу в разметке?-->
+        <p>Welcome to the gorgeous Sedona, because the Grand Canyon sucrs</p>
+        <img class="hero-img" src="#" alt="Гранд-Каньон" />
+        <!--Картинка с разделителем никакой смысловой нагрузки не несет, поэтому alt оставляю пустым-->
+        <img class="hero-divider-img" src="#" alt="" />
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="big">
+          Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </section>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <h3 class="advantages-title">Настоящий городок</h3>
+          <p class="advantages-description">
+            Седона - не аттракцион для туристов, там течет своя жизнь
+          </p>
+          <img class="advantages-img" src="#" alt="Здание на фоне гор" />
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Небольшая площадь</h3>
+          <p class="advantages-description">
+            Все достопримечательности находятся очень близко
+          </p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Красивая дорога</h3>
+          <p class="advantages-description">
+            Ехать в Седону из Лас-Вегаса совсем не скучно!
+          </p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Мало туристов</h3>
+          <p class="advantages-description">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
+        </li>
+        <li class="advantages-item">
+          <img class="advantages-img" src="#" alt="Гранд-Каньон" />
+          <h3 class="advantages-title">Там есть мост дьявола</h3>
+          <p class="advantages-description">Да, по нему можно пройти!</p>
+        </li>
+      </ul>
+      <section class="service">
+        <h2 class="visually-hidden">Сервис</h2>
+        <p class="big">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p>Опытный персонал и качественное обслуживание!</p>
+        <ul class="service-list">
+          <li class="service-item">
+            <h3 class="service-title">Жилье</h3>
+            <p class="service-description">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Еда</h3>
+            <p class="service-description">
+              Всегда заказывайте топовый фирменный бургер, вы не разочарутесь!
+            </p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Сувениры</h3>
+            <p class="service-description">
+              Не только китайского, но и настоящего местного производства!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="search-data">
+        <h2 class="search-data-title">Заинтересовались?</h2>
+        <p class="search-data-description">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в Седоне
+        </p>
+        <!--Сделать ссылкой или кнопкой с модальным окном? В Фигме в макете написано, что это кнопка. -->
+        <a class="search-data-button" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form
+          class="subscribe-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <p class="subscribe-form-emails">
+            <label class="visually-hidden" for="email-user">Ваш e-mail</label>
+            <input
+              type="email"
+              placeholder="Ваш e-mail"
+              id="email-user"
+              name="email-user"
+            />
+          </p>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/user/htmlacademyru"
+          >
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer-phone" href="+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-copyright" href="https://htmlacademy.ru/">
+        <img class="htmlacademy-logo" src="#" alt="Логотип htmlacademy" />
+      </a>
+    </footer>
   </body>
 </html>
