@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header-link" href="index.html">
+        <img class="main-header-logo" src="#" alt="Логотип города Седоны" />
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="main-header-logo" src="#" alt="Логотип города Седоны" />
-        </a>
         <ul class="menu-list">
           <li class="menu-item">
             <a class="menu-link menu-link-current" href="index.html">Главная</a>
@@ -33,24 +33,21 @@
               <span class="favourites">12</span>
             </a>
           </li>
-          <li class="menu-user-item">
-            <!--При нажатии на кнопку появится модальное окно с выбором даты заезда и пр.
-              Как делать модальное окно я пока не в курсе
-            Нужно ли кнопе задавать type в таком случае?-->
-            <button class="button-modal">Хочу сюда!</button>
-          </li>
         </ul>
       </nav>
+      <button class="button-modal" type="submit">Хочу сюда!</button>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <section class="hero">
         <h2 class="visually-hidden">Добро пожаловать</h2>
-        <!--Чтобы стилизовать элементы в <p> добавлять <span> сразу в разметке?-->
-        <p>Welcome to the gorgeous Sedona, because the Grand Canyon sucrs</p>
-        <img class="hero-img" src="#" alt="Гранд-Каньон" />
-        <!--Картинка с разделителем никакой смысловой нагрузки не несет, поэтому alt оставляю пустым-->
-        <img class="hero-divider-img" src="#" alt="" />
+        <img
+          class="welcome-img"
+          src="#"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucrs!"
+        />
+        <img class="hill-img" src="#" alt="горы Гранд-Каньон" />
+        <img class="divider-img" src="#" alt="" />
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
@@ -122,8 +119,9 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <!--Сделать ссылкой или кнопкой с модальным окном? В Фигме в макете написано, что это кнопка. -->
-        <a class="search-data-button" href="#">Поиск гостиницы в Седоне</a>
+        <button class="search-data-button" type="submit">
+          Поиск гостиницы в Седоне
+        </button>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
