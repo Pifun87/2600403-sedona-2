@@ -6,13 +6,18 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-link" href="index.html">
+      <a class="main-header-link" aria-current="page" href="index.html">
         <img class="main-header-logo" src="#" alt="Логотип города Седоны" />
       </a>
       <nav class="navigation">
         <ul class="menu-list">
           <li class="menu-item">
-            <a class="menu-link menu-link-current" href="index.html">Главная</a>
+            <a
+              class="menu-link menu-link-current"
+              aria-current="page"
+              href="index.html"
+              >Главная</a
+            >
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#"> О Седоне </a>
@@ -35,7 +40,7 @@
           </a>
         </li>
       </ul>
-      <button class="button-modal" type="submit">Хочу сюда!</button>
+      <button class="button-modal" type="button">Хочу сюда!</button>
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
@@ -118,7 +123,7 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="search-data-button" type="submit">
+        <button class="search-data-button" type="button">
           Поиск гостиницы в Седоне
         </button>
       </section>
@@ -132,7 +137,9 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label class="visually-hidden" for="email-user">Ваш e-mail</label>
+          <label class="visually-hidden" for="email-user"
+            >Укажите ваш e-mail</label
+          >
           <input
             type="email"
             placeholder="Ваш e-mail"
@@ -146,28 +153,28 @@
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="https://vk.com/htmlacademy">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
-        <li class="footer-social-item">
-          <a class="footer-social-link" href="https://t.me/htmlacademy">
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
-        <li class="footer-social-item">
+        <li class="social-item">
           <a
-            class="footer-social-link"
+            class="social-link"
             href="https://www.youtube.com/user/htmlacademyru"
           >
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-copyright" href="https://htmlacademy.ru/">
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="copyright" href="https://htmlacademy.ru/">
         <img class="htmlacademy-logo" src="#" alt="Логотип htmlacademy" />
       </a>
     </footer>
