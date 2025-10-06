@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
+    <!--main-header-->
     <header class="main-header">
       <a class="main-header-link" aria-current="page" href="index.html">
         <img
@@ -16,39 +17,45 @@
           alt="Логотип города Седоны"
         />
       </a>
+
+      <!--navigation-->
       <nav class="navigation">
         <ul class="menu-list">
           <li class="menu-item">
             <a
-              class="menu-link menu-link-current"
+              class="link menu-link menu-link-current"
               aria-current="page"
               href="index.html"
               >Главная</a
             >
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#"> О Седоне </a>
+            <a class="link menu-link" href="#"> О Седоне </a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="catalog.html">Гостиницы</a>
+            <a class="link menu-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
+
+      <!--menu-user-->
       <ul class="menu-user">
         <li class="menu-user-item">
-          <a class="menu-user-link menu-user-link-search" href="#">
+          <a class="link menu-user-link menu-user-link-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="menu-user-link menu-user-link-favourites" href="#">
+          <a class="link menu-user-link menu-user-link-favourites" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="favourites">12</span>
           </a>
         </li>
       </ul>
-      <button class="button-modal" type="button">Хочу сюда!</button>
+      <button class="button button-modal" type="button">Хочу сюда!</button>
     </header>
+
+    <!--main-index-->
     <main class="main-index">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <section class="hero">
@@ -61,19 +68,23 @@
           alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон поражает воображение!"
         />
       </section>
+
+      <!--advantages-->
       <section class="advantages">
         <header class="advantages-header">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="title">
+          <p class="title advantages-header-title">
             Седона - небольшой городок в Аризоне, заслуживающий большего!
           </p>
-          <p class="subtitle advantages-subtitle">
+          <p class="subtitle advantages-header-subtitle">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
         </header>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий городок</h3>
+            <h3 class="advantages-title advantages-title-color">
+              Настоящий городок
+            </h3>
             <p class="advantages-description">
               Седона - не аттракцион для туристов, там течет своя жизнь
             </p>
@@ -111,11 +122,15 @@
               height="385"
               alt="Гранд-Каньон"
             />
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
+            <h3 class="advantages-title advantages-title-color">
+              Там есть мост дьявола
+            </h3>
             <p class="advantages-description">Да, по нему можно пройти!</p>
           </li>
         </ul>
       </section>
+
+      <!--service-->
       <section class="service">
         <header class="service-header">
           <h2 class="visually-hidden">Доступные услуги в Седоне</h2>
@@ -128,25 +143,27 @@
         </header>
         <ul class="service-list">
           <li class="service-item">
-            <h3 class="service-title">Жилье</h3>
+            <h3 class="advantages-title service-title">Жилье</h3>
             <p class="service-description">
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </li>
           <li class="service-item">
-            <h3 class="service-title">Еда</h3>
+            <h3 class="advantages-title service-title">Еда</h3>
             <p class="service-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочарутесь!
             </p>
           </li>
           <li class="service-item">
-            <h3 class="service-title">Сувениры</h3>
+            <h3 class="advantages-title service-title">Сувениры</h3>
             <p class="service-description">
               Не только китайского, но и настоящего местного производства!
             </p>
           </li>
         </ul>
       </section>
+
+      <!--search-data-->
       <section class="search-data">
         <header class="search-data-header">
           <h2 class="title search-data-title">Заинтересовались?</h2>
@@ -155,10 +172,12 @@
             предложения гостиниц в Седоне
           </p>
         </header>
-        <button class="button search-data-button" type="button">
-          Поиск гостиницы в Седоне
-        </button>
+        <a class="link button link-search-data" href="#"
+          >Поиск гостиницы в Седоне</a
+        >
       </section>
+
+      <!--subscribe-index-->
       <section class="subscribe subscribe-index">
         <header class="subscribe-header">
           <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
@@ -187,29 +206,31 @@
         </form>
       </section>
     </main>
+
+    <!--main-footer-->
     <footer class="main-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy">
+          <a class="link social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="https://t.me/htmlacademy">
+          <a class="link social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-item">
           <a
-            class="social-link"
+            class="link social-link"
             href="https://www.youtube.com/user/htmlacademyru"
           >
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="copyright" href="https://htmlacademy.ru/">
+      <a class="link phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="link copyright" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Логотип htmlacademy </span>
       </a>
     </footer>
