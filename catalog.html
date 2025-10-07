@@ -41,12 +41,12 @@
       <!--menu-user-->
       <ul class="menu-user">
         <li class="menu-user-item">
-          <a class="link menu-user-link menu-user-link-search" href="#">
+          <a class="menu-user-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="menu-user-item">
-          <a class="link menu-user-link menu-user-link-favourites" href="#">
+          <a class="menu-user-favourites" href="#">
             <span class="visually-hidden">Избранное</span>
             <span class="favourites">12</span>
           </a>
@@ -85,9 +85,7 @@
           >
             <!--pool-parking-wifi-->
             <fieldset class="catalog-filter-group">
-              <legend class="filter catalog-filter-title">
-                Инфраструктура
-              </legend>
+              <legend class="filter filter-title">Инфраструктура</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control" for="pool">
@@ -126,9 +124,9 @@
 
             <!--hotel-motel-apartments-->
             <fieldset class="catalog-filter-group">
-              <legend class="filter catalog-filter-title">Тип жилья</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+              <legend class="filter filter-title">Тип жилья</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
                   <label class="control" for="hotel">
                     <input
                       class="control-input"
@@ -140,7 +138,7 @@
                     />Гостиница
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="filter-item">
                   <label class="control" for="motel">
                     <input
                       class="control-input"
@@ -151,7 +149,7 @@
                     />Мотель
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="filter-item">
                   <label class="control" for="apartments">
                     <input
                       class="control-input"
@@ -204,7 +202,7 @@
       </header>
       <section class="catalog-housing">
         <header class="catalog-housing-header">
-          <h2 class="title catalog-housing-title">
+          <h2 class="title found-housing-title">
             Найдено гостиниц:<span>38</span>
           </h2>
           <select class="select-control" aria-label="Сортировка">
@@ -216,17 +214,17 @@
           <!--tile-card-list-->
           <ul class="view-button-list">
             <li class="view-button-item">
-              <a class="link view-button button-tile" href="#">
+              <a class="link button-tile" href="#">
                 <span class="visually-hidden">Показать плитку</span>
               </a>
             </li>
             <li class="view-button-item">
-              <a class="link view-button button-card" href="#">
+              <a class="link button-card" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
             <li class="view-button-item">
-              <a class="link view-button button-list" href="#">
+              <a class="link button-list" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </li>
@@ -234,79 +232,79 @@
         </header>
 
         <!--Amara-Resort-&-Spa-->
-        <ul class="housing-card-list">
-          <li class="housing-card-item">
-            <a class="link housing-card-link" href="#">
+        <ul class="card-list">
+          <li class="card-item">
+            <a class="link card-link" href="#">
               <img
-                class="housing-card-img"
+                class="card-img"
                 src="images/hotel/hotel-1.jpg"
                 width="300"
                 height="212"
                 alt="Звездное небо в расщелине гор"
               />
-              <h3 class="housing-card-title">Amara Resort & Spa</h3>
+              <h3 class="card-title">Amara Resort & Spa</h3>
             </a>
-            <p class="housing-type-price">
-              <span class="housing-card-type">Гостиница</span>
-              <span class="housing-card-price">От 4000 ₽</span>
+            <p class="type-price">
+              <span class="card-type">Гостиница</span>
+              <span class="card-price">От 4000 ₽</span>
             </p>
-            <a class="link button housing-card-button" href="#">Подробнее</a>
+            <a class="link button card-button" href="#">Подробнее</a>
             <button class="button add-favorite-button" type="button">
               В избранное
             </button>
             <p class="stars stars-4">
               <span class="visual-hidden">4 звезды</span>
-              <span class="housing-card-rating"
+              <span class="card-rating"
                 >Рейтинг:<span class="rating">8,5</span></span
               >
             </p>
           </li>
 
           <!--Villas-at-Poco-Diablo-->
-          <li class="housing-card-item">
-            <a class="housing-card-link" href="#">
+          <li class="card-item">
+            <a class="link card-link" href="#">
               <img
-                class="housing-card-img"
+                class="card-img"
                 src="images/hotel/hotel-2.jpg"
                 width="300"
                 height="212"
                 alt="Радуга над горным хребтом"
               />
-              <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+              <h3 class="card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="housing-type-price">
-              <span class="housing-card-type">Гостиница</span>
-              <span class="housing-card-price">От 5000 ₽</span>
+            <p class="type-price">
+              <span class="card-type">Гостиница</span>
+              <span class="card-price">От 5000 ₽</span>
             </p>
-            <a class="link button housing-card-button" href="#">Подробнее</a>
+            <a class="link button card-button" href="#">Подробнее</a>
             <button class="button card-button favorite-button" type="button">
               В избранном
             </button>
             <p class="stars stars-4">
               <span class="visual-hidden">4 звезды</span>
-              <span class="housing-card-rating"
+              <span class="card-rating"
                 >Рейтинг:<span class="rating">9,2</span></span
               >
             </p>
           </li>
 
           <!--Desert Quail-Inn-->
-          <li class="housing-card-item">
-            <a class="housing-card-link" href="#">
+          <li class="card-item">
+            <a class="link card-link" href="#">
               <img
-                class="housing-card-img"
+                class="card-img"
                 src="images/hotel/hotel-3.jpg"
                 width="300"
                 height="212"
                 alt="Горы в утреннем рассвете"
               />
-              <h3 class="housing-card-title">Desert Quail Inn</h3>
+              <h3 class="card-title">Desert Quail Inn</h3>
             </a>
-            <p class="housing-type-price">
-              <span class="housing-card-type">Гостиница </span>
-              <span class="housing-card-price">От 2500 ₽</span>
+            <p class="type-price">
+              <span class="card-type">Гостиница </span>
+              <span class="card-price">От 2500 ₽</span>
             </p>
-            <a class="link button housing-card-button" href="#">Подробнее</a>
+            <a class="link button card-button" href="#">Подробнее</a>
             <button
               class="button card-button add-favorite-button"
               type="button"
@@ -315,29 +313,29 @@
             </button>
             <p class="stars stars-3">
               <span class="visual-hidden">3 звезды</span>
-              <span class="housing-card-rating"
+              <span class="card-rating"
                 >Рейтинг:<span class="rating">6,9</span></span
               >
             </p>
           </li>
 
           <!--GreenTree-Inn-->
-          <li class="housing-card-item">
-            <a class="housing-card-link" href="#">
+          <li class="card-item">
+            <a class="link card-link" href="#">
               <img
-                class="housing-card-img"
+                class="card-img"
                 src="images/hotel/hotel-4.jpg"
                 width="300"
                 height="212"
                 alt="Горы на фоне звездного неба в ночное время"
               />
-              <h3 class="housing-card-title">GreenTree Inn</h3>
+              <h3 class="card-title">GreenTree Inn</h3>
             </a>
-            <p class="housing-type-price">
-              <span class="housing-card-type">Гостиница</span>
-              <span class="housing-card-price">От 1500 ₽</span>
+            <p class="type-price">
+              <span class="card-type">Гостиница</span>
+              <span class="card-price">От 1500 ₽</span>
             </p>
-            <a class="link button housing-card-button" href="#">Подробнее</a>
+            <a class="link button card-button" href="#">Подробнее</a>
             <button
               class="button card-button add-favorite-button"
               type="button"
@@ -346,7 +344,7 @@
             </button>
             <p class="stars stars-2">
               <span class="visual-hidden">2 звезды</span>
-              <span class="housing-card-rating"
+              <span class="card-rating"
                 >Рейтинг:<span class="rating">5,0</span></span
               >
             </p>
@@ -413,25 +411,25 @@
     <footer class="main-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a class="link social-link" href="https://vk.com/htmlacademy">
+          <a class="social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="link social-link" href="https://t.me/htmlacademy">
+          <a class="social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="social-item">
           <a
-            class="link social-link"
+            class="social-link"
             href="https://www.youtube.com/user/htmlacademyru"
           >
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
       </ul>
-      <a class="link phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="link copyright" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Логотип htmlacademy </span>
       </a>
