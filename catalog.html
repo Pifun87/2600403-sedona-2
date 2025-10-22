@@ -15,22 +15,22 @@
             src="images/logo-Sedona.svg"
             width="140"
             height="70"
-            alt="Логотип города Седоны"
+            alt="Логотип города Седоны."
           />
         </a>
 
         <!--navigation-->
         <nav class="navigation">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a class="link menu-link" href="index.html">Главная</a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="link navigation-link" href="index.html">Главная</a>
             </li>
-            <li class="menu-item">
-              <a class="link menu-link" href="#"> О Седоне </a>
+            <li class="navigation-item">
+              <a class="link navigation-link" href="#"> О Седоне </a>
             </li>
-            <li class="menu-item">
+            <li class="navigation-item">
               <a
-                class="link menu-link menu-link-current"
+                class="link navigation-link navigation-link-current"
                 aria-current="page"
                 href="catalog.html"
                 >Гостиницы</a
@@ -40,14 +40,14 @@
         </nav>
 
         <!--menu-user-->
-        <ul class="menu-user">
-          <li class="menu-user-item">
-            <a class="user-link menu-user-search" href="#">
+        <ul class="user-list">
+          <li class="user-item">
+            <a class="user-link user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="menu-user-item">
-            <a class="user-link menu-user-favourites" href="#">
+          <li class="user-item">
+            <a class="user-link user-link-favourites" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites">12</span>
             </a>
@@ -58,10 +58,10 @@
 
       <!--main-inner-->
       <main class="main-container main-inner">
-        <header class="col inner-header">
+        <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-index">
               <a class="link breadcrumbs-link visually-hidden" href="index.html"
                 >Главная</a
               >
@@ -227,17 +227,17 @@
             <!--tile-card-list-->
             <ul class="view-button-list">
               <li class="view-button-item">
-                <a class="link button-tile" href="#">
+                <a class="link view-button button-tile" href="#">
                   <span class="visually-hidden">Показать плитку</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link button-card" href="#">
+                <a class="link view-button button-card" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link button-list" href="#">
+                <a class="link view-button button-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -261,12 +261,14 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 4000 ₽</span>
               </p>
-              <a class="link button card-button" href="#">Подробнее</a>
-              <button class="button add-favorite-button" type="button">
-                В избранное
-              </button>
+              <div class="button-detail-add">
+                <a class="link button card-detail" href="#">Подробнее</a>
+                <button class="button add-favorite-button" type="button">
+                  В избранное
+                </button>
+              </div>
               <p class="stars stars-4">
-                <span class="visual-hidden">4 звезды</span>
+                <span class="number-stars visually-hidden">4 звезды</span>
                 <span class="card-rating"
                   >Рейтинг:<span class="rating">8,5</span></span
                 >
@@ -289,12 +291,14 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 5000 ₽</span>
               </p>
-              <a class="link button card-button" href="#">Подробнее</a>
-              <button class="button card-button favorite-button" type="button">
-                В избранном
-              </button>
+              <div class="button-detail-add">
+                <a class="link button card-detail" href="#">Подробнее</a>
+                <button class="button favorite-button" type="button">
+                  В избранном
+                </button>
+              </div>
               <p class="stars stars-4">
-                <span class="visual-hidden">4 звезды</span>
+                <span class="number-stars visually-hidden">4 звезды</span>
                 <span class="card-rating"
                   >Рейтинг:<span class="rating">9,2</span></span
                 >
@@ -317,15 +321,14 @@
                 <span class="card-type">Гостиница </span>
                 <span class="card-price">От 2500 ₽</span>
               </p>
-              <a class="link button card-button" href="#">Подробнее</a>
-              <button
-                class="button card-button add-favorite-button"
-                type="button"
-              >
-                В избранное
-              </button>
+              <div class="button-detail-add">
+                <a class="link button card-detail" href="#">Подробнее</a>
+                <button class="button add-favorite-button" type="button">
+                  В избранное
+                </button>
+              </div>
               <p class="stars stars-3">
-                <span class="visual-hidden">3 звезды</span>
+                <span class="number-stars visually-hidden">3 звезды</span>
                 <span class="card-rating"
                   >Рейтинг:<span class="rating">6,9</span></span
                 >
@@ -348,15 +351,14 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 1500 ₽</span>
               </p>
-              <a class="link button card-button" href="#">Подробнее</a>
-              <button
-                class="button card-button add-favorite-button"
-                type="button"
-              >
-                В избранное
-              </button>
+              <div class="button-detail-add">
+                <a class="link button card-detail" href="#">Подробнее</a>
+                <button class="button add-favorite-button" type="button">
+                  В избранное
+                </button>
+              </div>
               <p class="stars stars-2">
-                <span class="visual-hidden">2 звезды</span>
+                <span class="number-stars visually-hidden">2 звезды</span>
                 <span class="card-rating"
                   >Рейтинг:<span class="rating">5,0</span></span
                 >
@@ -395,8 +397,8 @@
         <!--subscribe-inner-->
         <section class="col subscribe-inner">
           <header class="subscribe-header">
-            <h2 class="title">Подпишитесь на рассылку</h2>
-            <p class="subtitle">
+            <h2 class="title subscribe-title-inner">Подпишитесь на рассылку</h2>
+            <p class="subtitle subscribe-subtitle-inner">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
           </header>
