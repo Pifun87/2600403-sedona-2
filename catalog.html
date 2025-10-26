@@ -53,7 +53,9 @@
             </a>
           </li>
         </ul>
-        <button class="button button-modal" type="button">Хочу сюда!</button>
+        <div class="button-container">
+          <button class="button button-modal" type="button">Хочу сюда!</button>
+        </div>
       </header>
 
       <!--main-inner-->
@@ -261,17 +263,17 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 4000 ₽</span>
               </p>
-              <div class="button-detail-add">
-                <a class="link button card-detail" href="#">Подробнее</a>
-                <button class="button add-favorite-button" type="button">
-                  В избранное
-                </button>
-              </div>
+
+              <a class="link button card-detail" href="#">Подробнее</a>
+              <button class="button add-favorite-button" type="button">
+                В избранное
+              </button>
+
               <p class="stars stars-4">
-                <span class="number-stars visually-hidden">4 звезды</span>
-                <span class="card-rating"
-                  >Рейтинг:<span class="rating">8,5</span></span
+                <span class="number-stars">
+                  <span class="visually-hidden">4 звезды</span></span
                 >
+                <span class="card-rating">Рейтинг: 8,5</span>
               </p>
             </li>
 
@@ -291,17 +293,17 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 5000 ₽</span>
               </p>
-              <div class="button-detail-add">
-                <a class="link button card-detail" href="#">Подробнее</a>
-                <button class="button favorite-button" type="button">
-                  В избранном
-                </button>
-              </div>
+
+              <a class="link button card-detail" href="#">Подробнее</a>
+              <button class="button favorite-button" type="button">
+                В избранном
+              </button>
+
               <p class="stars stars-4">
-                <span class="number-stars visually-hidden">4 звезды</span>
-                <span class="card-rating"
-                  >Рейтинг:<span class="rating">9,2</span></span
+                <span class="number-stars"
+                  ><span class="visually-hidden">4 звезды</span></span
                 >
+                <span class="card-rating">Рейтинг:9,2</span>
               </p>
             </li>
 
@@ -321,17 +323,17 @@
                 <span class="card-type">Гостиница </span>
                 <span class="card-price">От 2500 ₽</span>
               </p>
-              <div class="button-detail-add">
-                <a class="link button card-detail" href="#">Подробнее</a>
-                <button class="button add-favorite-button" type="button">
-                  В избранное
-                </button>
-              </div>
+
+              <a class="link button card-detail" href="#">Подробнее</a>
+              <button class="button add-favorite-button" type="button">
+                В избранное
+              </button>
+
               <p class="stars stars-3">
-                <span class="number-stars visually-hidden">3 звезды</span>
-                <span class="card-rating"
-                  >Рейтинг:<span class="rating">6,9</span></span
+                <span class="number-stars"
+                  ><span class="visually-hidden">3 звезды</span></span
                 >
+                <span class="card-rating">Рейтинг:6,9</span>
               </p>
             </li>
 
@@ -351,17 +353,17 @@
                 <span class="card-type">Гостиница</span>
                 <span class="card-price">От 1500 ₽</span>
               </p>
-              <div class="button-detail-add">
-                <a class="link button card-detail" href="#">Подробнее</a>
-                <button class="button add-favorite-button" type="button">
-                  В избранное
-                </button>
-              </div>
+
+              <a class="link button card-detail" href="#">Подробнее</a>
+              <button class="button add-favorite-button" type="button">
+                В избранное
+              </button>
+
               <p class="stars stars-2">
-                <span class="number-stars visually-hidden">2 звезды</span>
-                <span class="card-rating"
-                  >Рейтинг:<span class="rating">5,0</span></span
+                <span class="number-stars"
+                  ><span class="visually-hidden">2 звезды</span></span
                 >
+                <span class="card-rating">Рейтинг:5,0</span>
               </p>
             </li>
           </ul>
@@ -445,9 +447,11 @@
           </li>
         </ul>
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="link copyright" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Логотип htmlacademy </span>
-        </a>
+        <div class="container-copyright">
+          <a class="link copyright" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип htmlacademy </span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>
