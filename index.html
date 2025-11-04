@@ -42,20 +42,42 @@
         <!--menu-user-->
         <ul class="user-list">
           <li class="user-item">
-            <a
-              class="user-link user-link-search user-icon icon-search"
-              href="#"
-            >
+            <a class="user-link user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
+              <svg
+                class="icon-user"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="m19.5 18-3.7-3.67a8 8 0 0 0 1.7-4.87 8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
+                />
+              </svg>
             </a>
           </li>
           <li class="user-item">
-            <a
-              class="user-link user-link-favourites user-icon icon-favourites"
-              href="#"
-            >
+            <a class="user-link user-link-favourites" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites">12</span>
+              <svg
+                class="icon-user"
+                aria-hidden="true"
+                focusable="false"
+                width="20"
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"
+                />
+              </svg>
             </a>
           </li>
         </ul>
@@ -83,9 +105,11 @@
           <header class="col advantages-header">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="title advantages-header-title">
-              Седона - небольшой городок в Аризоне, заслуживающий большего!
+              Седона - небольшой городок в Аризоне,<span class="block">
+                заслуживающий большего!</span
+              >
             </p>
-            <p class="subtitle advantages-header-subtitle">
+            <p class="subtitle">
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </header>
@@ -150,9 +174,10 @@
           <header class="col service-header">
             <h2 class="visually-hidden">Доступные услуги в Седоне</h2>
             <p class="title service-title">
-              Приезжайте в Седону отдохнуть в комфорте и уюте!
+              Приезжайте в Седону отдохнуть
+              <span class="block">в комфорте и уюте!</span>
             </p>
-            <p class="subtitle service-subtitle">
+            <p class="subtitle">
               Опытный персонал и качественное обслуживание!
             </p>
           </header>
@@ -164,7 +189,9 @@
                 Жилье
               </h3>
               <p class="service-description">
-                Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
+                Рекомендуем пожить в&nbsp;настоящем мотеле,<span class="block"
+                  >все как в&nbsp;кино!</span
+                >
               </p>
             </li>
             <li class="service-item">
@@ -174,8 +201,9 @@
                 Еда
               </h3>
               <p class="service-description">
-                Всегда заказывайте&nbsp; топовый фирменный бургер,&nbsp;
-                вы&nbsp;не разочарутесь!
+                Всегда заказывайте
+                <span class="block">топовый фирменный бургер,</span>
+                вы&nbsp;не&nbsp;разочарутесь!
               </p>
             </li>
             <li class="service-item">
@@ -196,8 +224,9 @@
         <section class="col search-data">
           <h2 class="title search-data-title">Заинтересовались?</h2>
           <p class="subtitle search-data-subtitle">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<span class="block">
+              и мы покажем вам лучшие предложения гостиниц в Седоне</span
+            >
           </p>
 
           <a class="link button button-search-data" href="#"
@@ -210,7 +239,10 @@
           <header class="subscribe-header">
             <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subtitle subscribe-subtitle">
-              Только полезная информация и никакого спама, честное бойскаутское!
+              Только полезная информация и никакого спама,<span
+                class="block"
+              ></span>
+              честное бойскаутское!
             </p>
           </header>
           <form
@@ -245,8 +277,8 @@
                 class="social-icon"
                 aria-hidden="true"
                 focusable="false"
-                width="24"
-                height="14"
+                width="24px"
+                height="14px"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 14"
@@ -303,7 +335,6 @@
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <div class="container-copyright">
           <a class="link copyright" href="https://htmlacademy.ru/">
-            <span class="visually-hidden">Логотип htmlacademy </span>
             <svg
               class="logo-htmlacademy"
               role="img"
