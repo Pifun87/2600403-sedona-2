@@ -113,7 +113,7 @@
             </li>
             <li class="breadcrumbs-item">
               <a
-                class="link breadcrumbs-link hj"
+                class="link breadcrumbs-link"
                 aria-current="page"
                 href="catalog.html"
                 >Гостиницы</a
@@ -136,33 +136,39 @@
                   <li class="catalog-filter-item">
                     <label class="control" for="pool">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pool"
                         id="pool"
                         checked
-                      />Бассейн
+                      />
+                      <span class="control-mark"></span
+                      ><span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control" for="parking">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="parking"
                         id="parking"
                         checked
-                      />Парковка
+                      />
+                      <span class="control-mark"></span
+                      ><span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control" for="wifi">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="wifi"
                         id="wifi"
-                      />Wi-Fi
+                      />
+                      <span class="control-mark"></span
+                      ><span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -175,35 +181,44 @@
                   <li class="filter-item">
                     <label class="control" for="hotel">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="housing-select"
                         value="hotel"
                         id="hotel"
                         checked
-                      />Гостиница
+                      /><span class="control-mark control-mark-type"></span
+                      ><span class="control-label control-label-type"
+                        >Гостиница</span
+                      >
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control" for="motel">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="housing-select"
                         value="motel"
                         id="motel"
-                      />Мотель
+                      /><span class="control-mark control-mark-type"></span
+                      ><span class="control-label control-label-type"
+                        >Мотель</span
+                      >
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control" for="apartments">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="housing-select"
                         value="apartments"
                         id="apartments"
-                      />Апартаменты
+                      /><span class="control-mark control-mark-type"></span
+                      ><span class="control-label control-label-type"
+                        >Апартаменты</span
+                      >
                     </label>
                   </li>
                 </ul>
@@ -212,33 +227,53 @@
               <!--range-price-->
               <div class="price-buttons">
                 <fieldset class="fieldset range-price-group">
-                  <legend class="filter range-price slider">
-                    Стоимость, ₽:
-                  </legend>
-                  <label class="control-range" for="min-price"
-                    ><span class="visually-hidden"
-                      >Укажите стоимость жилья от 0 ₽</span
-                    >
-                    <input
-                      type="number"
-                      id="min-price"
-                      name="min-price"
-                      value="0"
-                      required
-                    />
-                  </label>
-                  <label class="control" for="max-price"
-                    ><span class="visually-hidden"
-                      >Укажите стоимость жилья до 9000 ₽</span
-                    >
-                    <input
-                      type="number"
-                      id="max-price"
-                      name="max-price"
-                      value="9000"
-                      required
-                    />
-                  </label>
+                  <legend class="filter price">Стоимость, ₽:</legend>
+                  <div class="range-price">
+                    <div class="wrapper-range-inputs">
+                      <label class="control-range" for="min-price"
+                        ><span class="visually-hidden"
+                          >Укажите стоимость жилья от 0 ₽</span
+                        >
+                        <span class="control-range-text">от</span>
+                        <input
+                          class="field range-input"
+                          type="number"
+                          id="min-price"
+                          name="min-price"
+                          value="0"
+                          required
+                        />
+                      </label>
+                      <label class="control-range" for="max-price"
+                        ><span class="visually-hidden"
+                          >Укажите стоимость жилья до 9000 ₽</span
+                        >
+                        <span class="control-range-text">до</span>
+                        <input
+                          class="field max-price range-input"
+                          type="number"
+                          id="max-price"
+                          name="max-price"
+                          value="9000"
+                          required
+                        />
+                      </label>
+                    </div>
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 0; width: 206px">
+                          <button
+                            type="button"
+                            class="range-toggle toggle-min"
+                          ></button>
+                          <button
+                            type="button"
+                            class="range-toggle toggle-max"
+                          ></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="buttons">
                   <button
@@ -263,31 +298,47 @@
         <section class="catalog-housing">
           <header class="col catalog-housing-header">
             <h2 class="title found-housing-title">
-              Найдено гостиниц:<span>38</span>
+              Найдено гостиниц:<span class="search-results">38</span>
             </h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap" selected>Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
+            <div class="select sorting-type">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <svg
+                class="arrow-down-icon"
+                aria-hidden="true"
+                focusable="false"
+                width="12"
+                height="8"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 12 8"
+              >
+                <path
+                  d="m6.6 6.72 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0L6 4.92 1.5.22c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z"
+                />
+              </svg>
+            </div>
 
-            <!--tile-card-list-->
+            <!--view-tile-card-list-->
             <ul class="view-button-list">
               <li class="view-button-item">
                 <a
-                  class="link view-button button-tile view-button-current"
+                  class="link view-button-link button-tile view-button-current"
                   href="#"
                 >
                   <span class="visually-hidden">Показать плитку</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link view-button button-card" href="#">
+                <a class="link view-button-link button-card" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link view-button button-list" href="#">
+                <a class="link view-button-link button-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -459,6 +510,7 @@
           >
             <label class="visually-hidden" for="email-user">Ваш e-mail</label>
             <input
+              class="field"
               type="email"
               placeholder="Ваш e-mail"
               id="email-user"
