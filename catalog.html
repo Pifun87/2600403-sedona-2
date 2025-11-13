@@ -136,39 +136,36 @@
                   <li class="catalog-filter-item">
                     <label class="control" for="pool">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="checkbox"
                         name="pool"
                         id="pool"
                         checked
                       />
-                      <span class="control-mark"></span
-                      ><span class="control-label">Бассейн</span>
+                      <span class="label-control">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control" for="parking">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="checkbox"
                         name="parking"
                         id="parking"
                         checked
                       />
-                      <span class="control-mark"></span
-                      ><span class="control-label">Парковка</span>
+                      <span class="label-control">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control" for="wifi">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="checkbox"
                         name="wifi"
                         id="wifi"
                       />
-                      <span class="control-mark"></span
-                      ><span class="control-label">Wi-Fi</span>
+                      <span class="label-control">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -181,44 +178,35 @@
                   <li class="filter-item">
                     <label class="control" for="hotel">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="radio"
                         name="housing-select"
                         value="hotel"
                         id="hotel"
                         checked
-                      /><span class="control-mark control-mark-type"></span
-                      ><span class="control-label control-label-type"
-                        >Гостиница</span
-                      >
+                      /><span class="label-control">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control" for="motel">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="radio"
                         name="housing-select"
                         value="motel"
                         id="motel"
-                      /><span class="control-mark control-mark-type"></span
-                      ><span class="control-label control-label-type"
-                        >Мотель</span
-                      >
+                      /><span class="label-control">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="control" for="apartments">
                       <input
-                        class="visually-hidden control-input"
+                        class="control-input"
                         type="radio"
                         name="housing-select"
                         value="apartments"
                         id="apartments"
-                      /><span class="control-mark control-mark-type"></span
-                      ><span class="control-label control-label-type"
-                        >Апартаменты</span
-                      >
+                      /><span class="label-control">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -241,6 +229,9 @@
                           id="min-price"
                           name="min-price"
                           value="0"
+                          placeholder="0"
+                          min="0"
+                          max="9000"
                           required
                         />
                       </label>
@@ -255,6 +246,9 @@
                           id="max-price"
                           name="max-price"
                           value="9000"
+                          placeholder="9000"
+                          min="0"
+                          max="9000"
                           required
                         />
                       </label>
