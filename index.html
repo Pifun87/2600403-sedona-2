@@ -42,7 +42,7 @@
         <!--menu-user-->
         <ul class="user-list">
           <li class="user-item">
-            <a class="user-link user-link-search" href="#">
+            <a class="user-link" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
                 class="icon-user"
@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link user-link-favourites" href="#">
+            <a class="user-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites">12</span>
               <svg
@@ -82,7 +82,7 @@
           </li>
         </ul>
         <div class="button-container">
-          <button class="button button-modal" type="button">Хочу сюда!</button>
+          <a class="link button button-header" href="#">Хочу сюда!</a>
         </div>
       </header>
 
@@ -96,7 +96,7 @@
             src="images/welcome.svg"
             width="458"
             height="352"
-            alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон поражает воображение!"
+            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!"
           />
         </section>
 
@@ -105,7 +105,7 @@
           <header class="col advantages-header">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="title advantages-header-title">
-              Седона - небольшой городок в Аризоне,<span class="block">
+              Седона &mdash; небольшой городок в Аризоне,<span class="block">
                 заслуживающий большего!</span
               >
             </p>
@@ -120,7 +120,8 @@
                   Настоящий городок
                 </h3>
                 <p class="advantages-description">
-                  Седона - не аттракцион для туристов, там течет своя жизнь
+                  Седона &mdash; не аттракцион для туристов, там течет своя
+                  жизнь
                 </p>
               </div>
               <img
@@ -183,11 +184,7 @@
           </header>
           <ul class="service-list">
             <li class="service-item">
-              <h3
-                class="advantages-title service-item-header service-icon icon-lodge"
-              >
-                Жилье
-              </h3>
+              <h3 class="advantages-title service-icon icon-lodge">Жилье</h3>
               <p class="service-description">
                 Рекомендуем пожить в&nbsp;настоящем мотеле,<span class="block"
                   >все как в&nbsp;кино!</span
@@ -195,21 +192,15 @@
               </p>
             </li>
             <li class="service-item">
-              <h3
-                class="advantages-title service-item-header service-icon icon-burger"
-              >
-                Еда
-              </h3>
+              <h3 class="advantages-title service-icon icon-burger">Еда</h3>
               <p class="service-description">
                 Всегда заказывайте
                 <span class="block">топовый фирменный бургер,</span>
-                вы&nbsp;не&nbsp;разочарутесь!
+                вы&nbsp;не&nbsp;разочаруетесь!
               </p>
             </li>
             <li class="service-item">
-              <h3
-                class="advantages-title service-item-header service-icon icon-present"
-              >
+              <h3 class="advantages-title service-icon icon-present">
                 Сувениры
               </h3>
               <p class="service-description">
@@ -228,10 +219,9 @@
               и мы покажем вам лучшие предложения гостиниц в Седоне</span
             >
           </p>
-
-          <a class="link button button-search-data" href="#"
-            >Поиск гостиницы в Седоне</a
-          >
+          <button class="button button-search-data" type="button">
+            Поиск гостиницы в Седоне
+          </button>
         </section>
 
         <!--subscribe-index-->
@@ -278,8 +268,8 @@
                 class="social-icon"
                 aria-hidden="true"
                 focusable="false"
-                width="24px"
-                height="14px"
+                width="24"
+                height="14"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 14"
@@ -335,7 +325,10 @@
         </ul>
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <div class="container-copyright">
-          <a class="link copyright" href="https://htmlacademy.ru/">
+          <a
+            class="link copyright"
+            href="https://htmlacademy.ru/intensive/htmlcss"
+          >
             <svg
               class="logo-htmlacademy"
               role="img"
@@ -354,11 +347,10 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-user">
+    <div class="modal-container">
+      <div class="modal">
         <button class="button-close-modal" type="button">
-          <span class="visually-hidden">Закрыть</span>
-          <span class="icon-close"></span>
+          <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -376,7 +368,7 @@
                 type="text"
                 id="check-in-user"
                 name="check-in-user"
-                value="20 апреля 2020"
+                value="27 апреля 2020"
                 placeholder="Укажите дату"
                 required
               />
@@ -394,7 +386,7 @@
                 id="check-out-user"
                 name="check-out-user"
                 placeholder="Укажите дату"
-                value="1 сентября 2021"
+                value="1 сентября 2023"
                 required
               />
               <span class="icon-calendar"></span>
@@ -408,7 +400,7 @@
                   >Взрослые:</label
                 >
                 <div class="wrapper-number">
-                  <button class="button-control button-minus" type="button">
+                  <button class="button-control" type="button">
                     <svg
                       aria-label="Кнопка уменьшения количества"
                       class="control-icon icon-minus"
@@ -430,7 +422,7 @@
                     value="2"
                     required
                   />
-                  <button class="button-control button-plus" type="button">
+                  <button class="button-control" type="button">
                     <svg
                       aria-label="Кнопка увеличения количества"
                       class="control-icon icon-plus"
@@ -453,31 +445,25 @@
                     >Дети:</label
                   >
                   <span class="tooltip">
-                    <button
-                      class="tooltip-toogle"
-                      type="button"
-                      aria-labelledby="tooltip-label-date"
-                    >
+                    <button class="tooltip-toogle" type="button">
                       <svg
                         class="icon-tooltip"
-                        width="26px"
-                        height="26px"
+                        aria-hidden="true"
+                        focusable="false"
+                        width="2"
+                        height="12"
                         xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 26 26"
+                        fill="none"
+                        viewBox="0 0 2 12"
                       >
-                        <circle cx="13" cy="13" r="13" />
                         <path
-                          fill="#fff"
-                          d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                          fill-rule="evenodd"
+                          d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z"
                           clip-rule="evenodd"
                         />
                       </svg>
                     </button>
-                    <span
-                      class="tooltip-text"
-                      role="tooltip"
-                      id="tooltip-label-date"
+                    <span class="tooltip-text"
                       >Укажите количество детей, которые будут с вами, возраст
                       которых от 6 до 18 лет. Дети до 6 лет размещаются
                       бесплатно.</span
@@ -485,7 +471,7 @@
                   </span>
                 </span>
                 <div class="wrapper-number">
-                  <button class="button-control button-minus" type="button">
+                  <button class="button-control" type="button">
                     <svg
                       aria-label="Кнопка уменьшения количества"
                       class="control-icon icon-minus"
@@ -506,7 +492,7 @@
                     value="2"
                     required
                   />
-                  <button class="button-control button-plus" type="button">
+                  <button class="button-control" type="button">
                     <svg
                       aria-label="Кнопка увеличения количества"
                       aria-hidden="true"
