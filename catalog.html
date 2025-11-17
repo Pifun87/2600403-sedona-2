@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <title>Гостиницы в Седоне</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../2600403-sedona-2-master/images/favicon-32x32.png"
+    />
   </head>
   <body>
     <div class="page-container">
@@ -116,8 +122,8 @@
             >
               <!--pool-parking-wifi-->
               <fieldset class="fieldset infrastructure">
-                <legend class="filter filter-title">Инфраструктура:</legend>
-                <ul class="catalog-filter-list">
+                <legend class="filter">Инфраструктура:</legend>
+                <ul class="filter-list">
                   <li class="catalog-filter-item">
                     <label class="control" for="pool">
                       <input
@@ -158,7 +164,7 @@
 
               <!--hotel-motel-apartments-->
               <fieldset class="fieldset type-housing">
-                <legend class="filter filter-title">Тип Жилья:</legend>
+                <legend class="filter">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="control" for="hotel">
@@ -292,18 +298,18 @@
               <li class="view-button-item">
                 <a
                   class="link view-button-link button-tile view-button-current"
-                  href="#"
+                  href="?view=tile"
                 >
                   <span class="visually-hidden">Показать плитку</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link view-button-link button-card" href="#">
+                <a class="link view-button-link button-card" href="?view=card">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-button-item">
-                <a class="link view-button-link button-list" href="#">
+                <a class="link view-button-link button-list" href="?view=list">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -434,12 +440,7 @@
           <!--pagination-->
           <ol class="pagination-list">
             <li class="pagination-item">
-              <a
-                class="pagination-link pagination-current"
-                href="#"
-                aria-current="page"
-                >1</a
-              >
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -555,7 +556,9 @@
             </a>
           </li>
         </ul>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="container-phone">
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <div class="container-copyright">
           <a
             class="link copyright"

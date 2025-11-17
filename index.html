@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <title>Седона - городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../2600403-sedona-2-master/images/favicon-32x32.png"
+    />
   </head>
   <body>
     <div class="page-container">
@@ -323,7 +329,9 @@
             </a>
           </li>
         </ul>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="container-phone">
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <div class="container-copyright">
           <a
             class="link copyright"
@@ -347,12 +355,12 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal">
         <button class="button-close-modal" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
-        <section class="modal-content">
+        <section>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form
             class="form-user"
@@ -445,7 +453,7 @@
                     >Дети:</label
                   >
                   <span class="tooltip">
-                    <button class="tooltip-toogle" type="button">
+                    <button class="tooltip-toogle icon-tooltip" type="button">
                       <svg
                         class="icon-tooltip"
                         aria-hidden="true"
