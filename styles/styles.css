@@ -151,7 +151,7 @@ body {
 
 .field[type="number"] {
   -moz-appearance: textfield;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 /*header*/
@@ -698,7 +698,7 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
-/*--modal-container--*/
+/*modal-container*/
 
 .modal-container {
   position: fixed;
@@ -789,16 +789,34 @@ body {
   display: grid;
   grid-template-columns: 119px 440px;
   column-gap: 18px;
-  row-gap: 4px;
-  align-items: baseline;
   position: relative;
+  align-items: baseline;
+}
+
+.container-date {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 73px;
+}
+
+.container-date::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/calendar.svg);
+  top: 16px;
+  right: 22px;
+  opacity: 0.3;
 }
 
 .field-user[type="text"] {
   padding-top: 12px;
-  padding-right: 40px;
+  padding-right: 60px;
   padding-left: 20px;
-  padding-bottom: 12x;
+  padding-bottom: 12px;
   border-radius: 4px;
 }
 
@@ -807,28 +825,13 @@ body {
   font-weight: 700;
 }
 
-.icon-calendar {
-  content: "";
-  position: absolute;
-  background-image: url(../images/calendar.svg);
-  background-size: contain;
-  width: 16px;
-  height: 15px;
-  top: 16px;
-  right: 21px;
-  cursor: pointer;
-  opacity: 0.3;
-}
-
 .info-warning {
-  grid-column: 2/3;
   font-size: 16px;
   color: #ff5757;
   padding-left: 20px;
 }
 
 .info {
-  grid-column: 2/3;
   font-size: 16px;
   color: #333333;
   padding-left: 20px;
@@ -844,15 +847,16 @@ body {
 
 .field-adults {
   margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 91px 1fr;
   gap: 46px;
   align-items: center;
 }
 
 .field-children {
-  display: flex;
-  gap: 82px;
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 46px;
   align-items: center;
 }
 
@@ -882,11 +886,9 @@ body {
 
 .icon-tooltip {
   background-image: url(../images/tooltip.svg);
-  background-size: contain;
+  background-size: 2px 12px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 2px;
-  height: 12px;
 }
 
 .tooltip-text {
@@ -975,29 +977,64 @@ body {
   appearance: none;
   border: none;
   transition: background-color 170ms ease-in-out, color 170ms ease-in-out;
-}
-
-.button-control:focus {
-  outline: transparent;
   position: relative;
 }
 
-.icon-minus {
+.icon-minus::before {
+  content: "";
   position: absolute;
-  fill: rgba(117, 97, 87, 0.3);
-  cursor: pointer;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
   left: 13px;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.icon-plus {
-  background-image: url(../images/plus.svg);
+.icon-plus::before {
+  content: "";
   position: absolute;
-  right: 13px;
-  top: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
-.button-control:focus .icon-minus {
+.icon-plus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 14px;
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-minus:hover:before {
+  background-color: #000000;
+}
+
+.icon-minus:active:before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-plus:hover:before {
+  background-color: #000000;
+}
+
+.icon-plus:hover::after {
+  background-color: #000000;
+}
+
+.button-control:focus {
+  outline: none;
+  position: relative;
+}
+
+.icon-minus:focus::before {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1005,9 +1042,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: transparent;
 }
 
-.button-control:focus .icon-plus {
+.icon-plus:active:before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-plus:active::after {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-plus:focus::before,
+.icon-plus:focus::after {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -1015,14 +1062,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.control-icon:hover {
-  fill: #000000;
-}
-
-.control-icon:active {
-  fill: rgba(117, 97, 87, 0.3);
+  background-color: transparent;
 }
 
 .field-user[type="number"] {
@@ -1415,7 +1455,6 @@ body {
   justify-content: flex-end;
   text-align: center;
   gap: 8px;
-  text-align: center;
   width: 290px;
 }
 
