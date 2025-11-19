@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>Гостиницы в Седоне</title>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -28,13 +29,13 @@
         <!--navigation-->
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li>
               <a class="link navigation-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a class="link navigation-link" href="#"> О Седоне </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a
                 class="link navigation-link navigation-link-current"
                 aria-current="page"
@@ -47,7 +48,7 @@
 
         <!--menu-user-->
         <ul class="user-list">
-          <li class="user-item">
+          <li>
             <a class="user-link" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
@@ -66,7 +67,7 @@
               </svg>
             </a>
           </li>
-          <li class="user-item">
+          <li>
             <a class="user-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites">12</span>
@@ -113,7 +114,7 @@
           </ol>
 
           <!--housing-filter-->
-          <section class="housing-filter" data-test="filter">
+          <section data-test="filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form
               class="catalog-filter"
@@ -121,10 +122,10 @@
               method="get"
             >
               <!--pool-parking-wifi-->
-              <fieldset class="fieldset infrastructure">
+              <fieldset class="fieldset">
                 <legend class="filter">Инфраструктура:</legend>
                 <ul class="filter-list">
-                  <li class="catalog-filter-item">
+                  <li>
                     <label class="control" for="pool">
                       <input
                         class="control-input"
@@ -136,7 +137,7 @@
                       <span class="label-control">Бассейн</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li>
                     <label class="control" for="parking">
                       <input
                         class="control-input"
@@ -148,7 +149,7 @@
                       <span class="label-control">Парковка</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
+                  <li>
                     <label class="control" for="wifi">
                       <input
                         class="control-input"
@@ -205,8 +206,8 @@
 
               <!--range-price-->
               <div class="price-buttons">
-                <fieldset class="fieldset range-price-group">
-                  <legend class="filter price">Стоимость, ₽:</legend>
+                <fieldset class="fieldset">
+                  <legend class="filter">Стоимость, ₽:</legend>
                   <div class="range-price">
                     <div class="wrapper-range-inputs">
                       <label class="control-range" for="min-price"
@@ -247,14 +248,12 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar" style="left: 0; width: 206px">
-                          <button
-                            type="button"
-                            class="range-toggle toggle-min"
-                          ></button>
-                          <button
-                            type="button"
-                            class="range-toggle toggle-max"
-                          ></button>
+                          <button type="button" class="range-toggle toggle-min">
+                            <span class="visually-hidden">Уменьшить</span>
+                          </button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">Увеличить</span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -280,12 +279,12 @@
         </header>
 
         <!--cheap-expensive-popular-->
-        <section class="col catalog-housing" data-test="catalog">
+        <section class="col" data-test="catalog">
           <header class="catalog-housing-header">
             <h2 class="title found-housing-title">
               Найдено гостиниц:<span class="search-results"> 38</span>
             </h2>
-            <div class="select sorting-type">
+            <div class="select">
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap" selected>Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -295,7 +294,7 @@
 
             <!--view-tile-card-list-->
             <ul class="view-button-list">
-              <li class="view-button-item">
+              <li>
                 <a
                   class="link view-button-link button-tile view-button-current"
                   href="?view=tile"
@@ -303,12 +302,12 @@
                   <span class="visually-hidden">Показать плитку</span>
                 </a>
               </li>
-              <li class="view-button-item">
+              <li>
                 <a class="link view-button-link button-card" href="?view=card">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
-              <li class="view-button-item">
+              <li>
                 <a class="link view-button-link button-list" href="?view=list">
                   <span class="visually-hidden">Показать список</span>
                 </a>
@@ -341,7 +340,7 @@
 
               <div class="wrapper-rating">
                 <span class="stars stars-4" role="img" aria-label="4 звезды">
-                  <span class="visually-hidden">4 звезды</span></span
+                </span
                 ><span class="rating"> Рейтинг: 8,5 </span>
               </div>
             </li>
@@ -369,9 +368,11 @@
               </button>
 
               <div class="wrapper-rating">
-                <span class="stars stars-4" role="img" aria-label="4 звезды"
-                  ><span class="visually-hidden">4 звезды</span></span
-                >
+                <span
+                  class="stars stars-4"
+                  role="img"
+                  aria-label="4 звезды"
+                ></span>
                 <span class="rating"> Рейтинг: 9,2 </span>
               </div>
             </li>
@@ -399,9 +400,11 @@
               </button>
 
               <div class="wrapper-rating">
-                <span class="stars stars-3" role="img" aria-label="3 звезды"
-                  ><span class="visually-hidden">3 звезды</span></span
-                >
+                <span
+                  class="stars stars-3"
+                  role="img"
+                  aria-label="3 звезды"
+                ></span>
                 <span class="rating"> Рейтинг: 6,9 </span>
               </div>
             </li>
@@ -429,9 +432,11 @@
               </button>
 
               <div class="wrapper-rating">
-                <span class="stars stars-2" role="img" aria-label="2 звезды"
-                  ><span class="visually-hidden">2 звезды</span></span
-                >
+                <span
+                  class="stars stars-2"
+                  role="img"
+                  aria-label="2 звезды"
+                ></span>
                 <span class="rating"> Рейтинг: 5,0 </span>
               </div>
             </li>
@@ -439,22 +444,22 @@
 
           <!--pagination-->
           <ol class="pagination-list">
-            <li class="pagination-item">
+            <li>
               <a class="pagination-link pagination-current">1</a>
             </li>
-            <li class="pagination-item">
+            <li>
               <a class="pagination-link" href="#">2</a>
             </li>
-            <li class="pagination-item">
+            <li>
               <a class="pagination-link" href="#">3</a>
             </li>
-            <li class="pagination-item">
+            <li>
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item">
+            <li>
               <span class="pagination-link pagination-text">...</span>
             </li>
-            <li class="pagination-item" value="10">
+            <li value="10">
               <a class="pagination-link" href="#">10</a>
             </li>
           </ol>
@@ -462,7 +467,7 @@
 
         <!--subscribe-inner-->
         <section class="col subscribe-inner" data-test="subscribe">
-          <header class="subscribe-header">
+          <header>
             <h2 class="title subscribe-title-inner">Подпишитесь на рассылку</h2>
             <p class="subtitle subscribe-subtitle-inner">
               Только полезная информация и никакого спама,
@@ -491,10 +496,15 @@
       </main>
 
       <!--main-footer-->
-      <footer class="col main-footer" data-test="footer">
+      <footer class="col footer" data-test="footer">
         <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
+          <li>
+            <a
+              class="social-link"
+              href="https://vk.com/htmlacademy"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <span class="visually-hidden">В контакте</span>
               <svg
                 class="social-icon"
@@ -514,8 +524,13 @@
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
+          <li>
+            <a
+              class="social-link"
+              href="https://t.me/htmlacademy"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <span class="visually-hidden">Телеграмм</span>
               <svg
                 class="social-icon"
@@ -533,10 +548,12 @@
               </svg>
             </a>
           </li>
-          <li class="social-item">
+          <li>
             <a
               class="social-link"
               href="https://www.youtube.com/user/htmlacademyru"
+              target="_blank"
+              rel="noreferrer noopener"
             >
               <span class="visually-hidden">Ютуб</span>
               <svg
@@ -563,6 +580,8 @@
           <a
             class="link copyright"
             href="https://htmlacademy.ru/intensive/htmlcss"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             <svg
               class="logo-htmlacademy"

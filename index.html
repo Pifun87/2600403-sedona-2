@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <title>Седона - городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -24,11 +25,10 @@
             alt="Логотип города Седоны."
           />
         </a>
-
         <!--navigation-->
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item">
+            <li>
               <a
                 class="link navigation-link navigation-link-current"
                 aria-current="page"
@@ -36,10 +36,10 @@
                 >Главная</a
               >
             </li>
-            <li class="navigation-item">
+            <li>
               <a class="link navigation-link" href="#"> О Седоне </a>
             </li>
-            <li class="navigation-item">
+            <li>
               <a class="link navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -47,7 +47,7 @@
 
         <!--menu-user-->
         <ul class="user-list">
-          <li class="user-item">
+          <li>
             <a class="user-link" href="#">
               <span class="visually-hidden">Поиск</span>
               <svg
@@ -66,7 +66,7 @@
               </svg>
             </a>
           </li>
-          <li class="user-item">
+          <li>
             <a class="user-link" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="favourites">12</span>
@@ -107,7 +107,7 @@
         </section>
 
         <!--advantages-->
-        <section class="advantages" data-test="advantages">
+        <section data-test="advantages">
           <header class="col advantages-header">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="title advantages-header-title">
@@ -231,8 +231,8 @@
         </section>
 
         <!--subscribe-index-->
-        <section class="col subscribe subscribe-index" data-test="subscribe">
-          <header class="subscribe-header">
+        <section class="col subscribe" data-test="subscribe">
+          <header>
             <h2 class="title subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subtitle subscribe-subtitle">
               Только полезная информация и никакого спама,<span
@@ -265,10 +265,15 @@
       </main>
 
       <!--main-footer-->
-      <footer class="main-footer" data-test="footer">
+      <footer class="col footer" data-test="footer">
         <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
+          <li>
+            <a
+              class="social-link"
+              href="https://vk.com/htmlacademy"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <span class="visually-hidden">В контакте</span>
               <svg
                 class="social-icon"
@@ -288,8 +293,13 @@
               </svg>
             </a>
           </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
+          <li>
+            <a
+              class="social-link"
+              href="https://t.me/htmlacademy"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <span class="visually-hidden">Телеграмм</span>
               <svg
                 class="social-icon"
@@ -307,10 +317,12 @@
               </svg>
             </a>
           </li>
-          <li class="social-item">
+          <li>
             <a
               class="social-link"
               href="https://www.youtube.com/user/htmlacademyru"
+              target="_blank"
+              rel="noreferrer noopener"
               ><span class="visually-hidden">Ютуб</span>
               <svg
                 class="social-icon"
@@ -336,6 +348,8 @@
           <a
             class="link copyright"
             href="https://htmlacademy.ru/intensive/htmlcss"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             <svg
               class="logo-htmlacademy"
@@ -355,10 +369,12 @@
         </div>
       </footer>
     </div>
+
+    <!--modal-container-->
     <div class="modal-container modal-container-close">
       <div class="modal">
         <button class="button-close-modal" type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
+          <span class="visually-hidden">Закрыть окно</span>
         </button>
         <section>
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -407,14 +423,25 @@
             </div>
             <div class="field-group-people">
               <div class="field-adults">
-                <label class="modal-control-label" for="adults-user"
+                <label
+                  class="modal-control-label label-adults"
+                  for="adults-user"
                   >Взрослые:</label
                 >
                 <div class="wrapper-number">
-                  <button
-                    class="button-control icon-minus"
-                    type="button"
-                  ></button>
+                  <button class="button-control" type="button">
+                    <svg
+                      aria-label="Уменьшить"
+                      class="control-icon icon-minus"
+                      width="14px"
+                      height="2px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 2"
+                    >
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
+                  </button>
                   <input
                     class="field field-user"
                     type="number"
@@ -423,25 +450,36 @@
                     value="2"
                     required
                   />
-                  <button
-                    class="button-control icon-plus"
-                    type="button"
-                  ></button>
+                  <button class="button-control" type="button">
+                    <svg
+                      aria-label="Увеличить"
+                      class="control-icon icon-plus"
+                      width="14px"
+                      height="14px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 14"
+                    >
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="field-children">
-                <span class="children-tooltip">
-                  <label
-                    class="modal-control-label children-tooltip"
-                    for="children-user"
+                <span class="form-children-tooltip">
+                  <label class="modal-control-label" for="children-user"
                     >Дети:</label
                   >
                   <span class="tooltip">
                     <button
                       class="tooltip-toogle icon-tooltip"
                       type="button"
+                      aria-labelledby="tooltip-label-date"
                     ></button>
-                    <span class="tooltip-text"
+                    <span
+                      class="tooltip-text"
+                      role="tooltip"
+                      id="tooltip-label-date"
                       >Укажите количество детей, которые будут с вами, возраст
                       которых от 6 до 18 лет. Дети до 6 лет размещаются
                       бесплатно.</span
@@ -449,10 +487,19 @@
                   </span>
                 </span>
                 <div class="wrapper-number">
-                  <button
-                    class="button-control icon-minus"
-                    type="button"
-                  ></button>
+                  <button class="button-control" type="button">
+                    <svg
+                      aria-label="Уменьшить"
+                      class="control-icon icon-minus"
+                      width="14px"
+                      height="2px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 2"
+                    >
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
+                  </button>
                   <input
                     class="field field-user"
                     type="number"
@@ -461,10 +508,19 @@
                     value="2"
                     required
                   />
-                  <button
-                    class="button-control icon-plus"
-                    type="button"
-                  ></button>
+                  <button class="button-control" type="button">
+                    <svg
+                      aria-label="Увеличить"
+                      class="control-icon icon-plus"
+                      width="14px"
+                      height="14px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 14"
+                    >
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
